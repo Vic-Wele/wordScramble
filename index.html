@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Word Scramble</title>
+  </head>
+  <body>
+    <!--div wrapping this whole show ==================================================-->
+
+    <div class="container">
+      <h2>Word Scramble</h2>
+
+      <!--div to hold the random words ================================================-->
+
+      <div id="content">
+        <p id="word">enaxpnios</p>
+
+        <!--div for hints and countdown to solve ================================================-->
+
+        <div id="details">
+          <p class="hint">
+            Hint: <span>The process of increase or growth</span>
+          </p>
+
+          <!-- p with an innerText that displays the time countdown of 30s =========================-->
+          <p class="timer-hint">
+            Time Left: <span><b>30</b>s</span>
+          </p>
+        </div>
+
+        <!-- input text field for typing the answer ================================================-->
+        <input type="text" placeholder="Enter a valid word" id="input-el" />
+
+        <!-- div to hold the refresh and hint buttons -================================================-->
+
+        <div id="buttons">
+          <button id="refresh-word">Refresh Word</button>
+          <button id="check-word">Check Word</button>
+        </div>
+      </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="wordScramble.js"></script>
+  </body>
+</html>
